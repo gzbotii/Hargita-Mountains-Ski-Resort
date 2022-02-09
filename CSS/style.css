@@ -35,8 +35,13 @@ h1, h2, h3 {line-height: 1;}
   text-decoration: none;
   display: inline-block;
   font-weight: var(--fw-bold);
+  margin-bottom: .75em;
   /* letter-spacing: 1px; */
 }
+
+/* .button + .button {
+  margin-left: 1em;
+} */
 
 .button--main {
 background-color: var(--clr-primary);
@@ -160,4 +165,67 @@ header {
   line-height: 1;
   font-weight: var(--fw-black);
   font-size: 3rem;
+}
+
+@media (min-width: 700px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: var(--grid);            
+    justify-items: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main-content > * { grid-column: 2 / 4; }
+
+  .main {
+      background-position: left bottom;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+      display: grid;
+      grid-template-columns: var(--grid);
+      align-items: center;
+  }
+
+  .logo,
+  .nav,
+  .weather {
+      grid-row: 1;
+      margin: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10px;
+  }
+
+  .logo {
+      grid-column: 2;
+      max-height: 3.5em;
+  }
+
+  .nav {
+      grid-column: 2 / 5;
+      justify-self: end;
+      margin-right: 3em;
+  }
+
+  .weather {
+      grid-column: -2 / -1;
+      justify-self: end;
+      margin: 0;
+  }
+
+  .weather-info span:last-child {
+    padding-left: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content { 
+    background-position: center right;}
 }
