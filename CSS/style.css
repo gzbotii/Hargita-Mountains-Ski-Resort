@@ -25,6 +25,8 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3 {line-height: 1;}
+
 .logo {
   margin-top: 0.4em;
   max-width: 8em;
@@ -68,7 +70,62 @@ header {
 }
 
 .weather-icon img {
-  max-width: 40px;
+  max-width: 2em;
 }
 
-/* p21838 */
+.weather-info {
+  margin: 0;
+  text-align: left;
+  margin-left: .75rem;
+  color: rgba(255, 255, 255, .7);
+  font-size: .75rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.weather-info span{
+  color: var(--clr-light);
+  margin-left: auto;
+  font-size: .85rem;
+  margin-right: .75rem;
+  text-transform: none;
+}
+
+.weather-info:first-of-type {
+  margin-top: .5em;
+  position: relative;
+  margin-bottom: .5rem;
+}
+
+.weather-info:first-of-type::after {
+  content: '';
+  position: absolute;
+  background: var(--clr-light);
+  opacity: .25;
+  height: 1.5px;
+  width: calc(100% - .75rem);
+  bottom: 0;
+  margin-bottom: -.25rem;
+}
+.weather-info:last-of-type {
+  margin-bottom: .5em;
+}
+
+.main-content {
+  /* display: grid; */
+  padding: 3em 1em 10rem;
+}
+
+.main {
+  background-image: url(../Images/sebastian-staines.jpg);
+  background-size: cover;
+}
+
+.title {
+  line-height: 1;
+  font-weight: var(--fw-black);
+  font-size: 3rem;
+}
