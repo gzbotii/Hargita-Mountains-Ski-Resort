@@ -25,15 +25,19 @@ body {
   line-height: 1.6;
 }
 
+.logo {
+  margin-top: 0.4em;
+  max-width: 8em;
+}
+
 header {
   background-color: var(--clr-light);
-  padding: 1em;
   text-align: center;
 }
 
 .nav-list {
   margin: 0;
-  padding: 0;
+  padding: 1em;
   list-style: none;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -48,7 +52,23 @@ header {
   color: inherit;
 }
 
-.logo {
-  margin-top: -0.4em;
-  max-width: 8em;
+.weather {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background: var(--clr-dark);
+  color: var(--clr-light);
 }
+
+.weather-icon {
+  grid-row: span 2;
+  background: var(--clr-primary);
+  padding: 0.5em;
+  display: flex;
+  align-content: center;
+}
+
+.weather-icon img {
+  max-width: 40px;
+}
+
+/* p21838 */
