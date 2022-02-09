@@ -18,18 +18,37 @@
 }
 
 body {
+  margin: 0;
   font-family: "Work Sans", sans-serif;
   font-size: 1.125rem;
   color: var(--clr-dark);
   line-height: 1.6;
 }
 
-nav {
+header {
   background-color: var(--clr-light);
-  /* padding: ; */
+  padding: 1em;
+  text-align: center;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo {
-  margin-top: 1em;
-  max-width: 5em;
+  margin-top: -0.4em;
+  max-width: 8em;
 }
