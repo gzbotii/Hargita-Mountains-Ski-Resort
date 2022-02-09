@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #f70058;
+  --clr-dark: #0c0e36;
+  --clr-light: #fff;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --grid: minmax(1em, 10%) minmax(10rem, 22ch) minmax(10rem, 23ch)
+    minmax(1em, 3fr) max-content;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+  line-height: 1.6;
+}
+
+nav {
+  background-color: var(--clr-light);
+  /* padding: ; */
+}
+
+.logo {
+  margin-top: 1em;
+  max-width: 5em;
+}
