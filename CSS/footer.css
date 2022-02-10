@@ -106,6 +106,13 @@ ul {
 
 /* Responsive */
 
+@media (max-width: 820px) {
+  .footer-col {
+    font-size: 1rem;
+    width: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-col {
     font-size: 1rem;
@@ -129,6 +136,6 @@ ul {
   }
 
   .footer-col:not(:first-child) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
