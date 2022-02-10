@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
+:root {
+  --clr-primary: #f70058;
+  --clr-dark: #0c0e36;
+  --clr-light: #fff;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -11,12 +19,12 @@ ul {
 }
 
 .footer-col h4 {
-  color: #e00000;
+  color: var(--clr-primary);
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 25px;
   position: relative;
-  /* padding-left: 40px; */
+  font-weight: var(--fw-bold);
 }
 
 .footer-col h4::before {
@@ -24,7 +32,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -5px;
-  background-color: #e00000;
+  background-color: var(--clr-primary);
   height: 2px;
   box-sizing: border-box;
   width: 40px;
@@ -35,9 +43,10 @@ ul {
 }
 
 .footer-col a {
-  color: #f4f7f6;
+  color: var(--clr-light);
   text-decoration: none;
   font-size: 16px;
+  text-transform: capitalize;
 }
 
 .footer-col ul li:not(:last-child) {
@@ -45,9 +54,9 @@ ul {
 }
 
 .footer-col ul li a {
-  color: #bbbbbb;
+  color: var(--clr-light);
   display: block;
-  font-weight: 300;
+  font-weight: var(--fw-normal);
   transition: all 0.3s ease;
 }
 
@@ -69,8 +78,8 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-  color: #bcbcbc;
-  background-color: #e00000;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
 }
 
 .row {
@@ -80,7 +89,7 @@ ul {
 }
 
 .footer {
-  background-color: #222222;
+  background-color: var(--clr-dark);
   padding: 90px 10px;
   display: flex;
   justify-content: center;
