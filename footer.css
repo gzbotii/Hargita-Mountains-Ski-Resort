@@ -68,6 +68,7 @@ ul {
   display: inline-block;
   height: 40px;
   width: 40px;
+  margin-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.3);
   margin-right: 0 10px 10px 0;
   text-align: center;
@@ -90,7 +91,7 @@ ul {
 
 .footer {
   background-color: var(--clr-dark);
-  padding: 90px 10px;
+  padding: 40px 10px 90px 10px;
   display: flex;
   justify-content: center;
   margin-top: auto;
@@ -101,7 +102,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 65px;
+  padding: 0 65px 0 45px;
 }
 
 /* Responsive */
