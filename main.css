@@ -97,9 +97,9 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  top: 4.6875rem;
-  left: 1.25rem;
-  right: 1.25rem;
+  top: 4rem;
+  left: 1.5rem;
+  right: 1.5rem;
   padding-block: 2.1875rem;
   gap: 10px;
   transform: scale(0);
@@ -109,12 +109,11 @@ header {
 }
 
 .nav_mobile a {
-  width: 11.755rem;
-  height: 3.4375rem;
+  width: 8.755rem;
+  height: 3rem;
   /* padding: 18px 28px; */
   color: var(--clr-light);
   text-align: center;
-
   text-decoration: none;
   text-transform: uppercase;
   font-weight: var(--fw-bold);
@@ -132,8 +131,8 @@ header {
   background-color: inherit;
   width: 30px;
   height: 26px;
-  top: -25px;
-  right: 0;
+  top: -20px;
+  right: 0px;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
