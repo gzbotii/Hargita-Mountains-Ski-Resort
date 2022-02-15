@@ -27,6 +27,7 @@
 .carousel-item h3 {
   font-size: 2rem;
   color: var(--clr-light);
+  text-transform: capitalize;
 }
 
 .carousel-item p {
