@@ -5,33 +5,35 @@
   --fw-normal: 400;
   --fw-bold: 700;
   --fw-black: 900;
-  --grid: minmax(1em, 10%) minmax(10rem, 22ch) minmax(10rem, 23ch)
-    minmax(1em, 3fr) max-content;
-}
-
-h2 {
-  margin: 20px 0 40px 0;
-  color: var(--clr-light);
-  /* position: absolute; */
 }
 
 .carousel-wrapper {
-  height: 25em;
+  height: 26em;
   position: relative;
-  width: 18em;
+  width: auto;
   margin: 0 auto;
-  background-color: var(--clr-dark);
 }
 .carousel-item {
   position: absolute;
-  top: 2.4em;
-  bottom: 10px;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   padding: 25px 50px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+
+.carousel-item h3 {
+  font-size: 2rem;
+  color: var(--clr-light);
+}
+
+.carousel-item p {
+  font-weight: var(--fw-normal);
+  color: var(--clr-light);
+}
+
 .arrow {
   border: solid var(--clr-primary);
   border-width: 0 3px 3px 0;
@@ -40,14 +42,14 @@ h2 {
 }
 
 .arrow-prev {
-  left: -20px;
+  left: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(135deg);
 }
 
 .arrow-next {
-  right: -20px;
+  right: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
@@ -73,15 +75,15 @@ h2 {
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background: url("https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg");
+  background: url(slide1.webp);
   background-size: cover;
 }
 .item-2 {
-  background: url("https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg");
+  background: url(slide2.webp);
   background-size: cover;
 }
 .item-3 {
-  background: url("https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg");
+  background: url(slide3.webp);
   background-size: cover;
 }
 
@@ -111,19 +113,38 @@ h2 {
   }
 
   .carousel-item {
-    margin-top: 2em;
+    background-position: center right;
   }
   .arrow-prev {
-    left: 35px;
+    left: 30px;
   }
 
   .arrow-next {
-    right: 35px;
+    right: 30px;
   }
 }
 
 @media (min-width: 1000px) {
   .carousel-wrapper {
-    width: 75em;
+    width: 100%;
+    height: 33em;
+  }
+  h2 {
+    margin: 0 0 0 30px;
+    padding: 0.7em 0 0.3em 0;
+    outline-offset: 5px;
+    font-size: 2rem;
+  }
+
+  .carousel-item {
+    padding: 3em 4em;
+  }
+
+  .arrow-prev {
+    left: 30px;
+  }
+
+  .arrow-next {
+    right: 30px;
   }
 }
