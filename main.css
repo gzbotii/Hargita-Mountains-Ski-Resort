@@ -45,6 +45,7 @@ h3 {
 .logo {
   min-height: 3em;
   max-width: 7em;
+  margin-left: 1%;
 }
 
 .button {
@@ -108,7 +109,7 @@ header {
 }
 
 .nav_mobile a {
-  width: 8.755rem;
+  width: 11.755rem;
   height: 3.4375rem;
   /* padding: 18px 28px; */
   color: var(--clr-light);
@@ -143,8 +144,9 @@ header {
 .hamburger_btn {
   background-color: transparent;
   border-color: transparent;
-  top: 0.2em;
-  left: 0.2em;
+  /* top: 0.2em;
+  left: 0.2em; */
+  margin-right: 2%;
 }
 
 .nav-link {
@@ -326,12 +328,14 @@ header {
   .logo {
     grid-column: 2;
     max-height: 3.5em;
+    /* logo positioning */
+    margin-left: 110%;
   }
 
   .nav {
     grid-column: 2 / 5;
     justify-self: end;
-    margin-right: 3em;
+    /* margin-right: 3em; */
   }
 
   .weather {
