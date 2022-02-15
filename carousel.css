@@ -60,14 +60,6 @@
   color: var(--clr-light);
 }
 
-/* @media (max-width: 480px) {
-  .arrow,
-  .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-  }
-} */
-
 /*Select every element*/
 [id^="item"] {
   display: none;
