@@ -143,8 +143,6 @@ header {
 .hamburger_btn {
   background-color: transparent;
   border-color: transparent;
-  /* top: 0.2em;
-  left: 0.2em; */
   margin-right: 2%;
 }
 
@@ -156,9 +154,6 @@ header {
 .weather {
   display: grid;
   grid-template-columns: min-content 1fr;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
   background: var(--clr-dark);
   color: var(--clr-light);
 }
