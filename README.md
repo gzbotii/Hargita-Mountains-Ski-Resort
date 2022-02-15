@@ -1,6 +1,6 @@
 A basic, responsive website, for a fictional ski-resort. It's features nav-bar in desktop and tablet, and a hamburger menu in mobile view, weather data updated via an API request.
 
-Built-up with the mobile-first principle in mind. My first project using CSS Grid. The design followed initially, and later extended with the menu and with the footer: https://www.figma.com/file/GwRmx1FJ31evTNq6hpCpCs/Amazing-Mountain. The logo is a created in Adobe Express, usded as svg, all other images are in webp format.
+Built-up with the mobile-first principle in mind. My first project using CSS Grid. The design followed initially, and later extended with the menu, carousel and with the footer: https://www.figma.com/file/GwRmx1FJ31evTNq6hpCpCs/Amazing-Mountain. The logo is a created in Adobe Express, usded as svg, all other images are in webp format.
 
 The weather data is fetched with an API call from OpenWeatherMap, location is set to Hargita mountains.
 
