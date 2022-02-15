@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-
 :root {
   --clr-primary: #f70058;
   --clr-dark: #0c0e36;
@@ -74,7 +72,7 @@ ul {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  background-color: #bcbcbc;
+  background-color: var(--clr-light);
   transition: all 0.3s ease;
 }
 
