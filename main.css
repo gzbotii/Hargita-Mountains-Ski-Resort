@@ -111,7 +111,6 @@ header {
 .nav_mobile a {
   width: 8.755rem;
   height: 3rem;
-  /* padding: 18px 28px; */
   color: var(--clr-light);
   text-align: center;
   text-decoration: none;
@@ -212,7 +211,6 @@ header {
 }
 
 .main-content {
-  /* display: grid; */
   padding: 3em 1em 10rem;
 }
 
@@ -290,7 +288,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* padding-left: 15px; */
     padding: 15px 0px;
     margin: 0px 20px;
     display: inline-block;
@@ -322,14 +319,12 @@ header {
   .logo {
     grid-column: 2;
     max-height: 3.5em;
-    /* logo positioning */
     margin-left: 110%;
   }
 
   .nav {
     grid-column: 2 / 5;
     justify-self: end;
-    /* margin-right: 3em; */
   }
 
   .weather {
