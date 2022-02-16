@@ -100,10 +100,10 @@
   }
 
   .carousel-item h3 {
-    padding-left: 2.5rem;
+    padding-left: 4.2%;
   }
   .carousel-item p {
-    padding-left: 2.5rem;
+    padding-left: 4.2%;
   }
 
   .carousel-item {
@@ -124,12 +124,12 @@
     height: 33em;
   }
 
-  .carousel-item h3 p {
+  .carousel-item h3 {
     padding-left: 5.2%;
   }
-  /* .carousel-item p {
+  .carousel-item p {
     padding-left: 5.2%;
-  } */
+  }
 
   .carousel-item {
     padding: 3em 4em;
