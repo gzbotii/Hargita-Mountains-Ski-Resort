@@ -241,7 +241,7 @@ header {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   nav {
     display: block;
   }
