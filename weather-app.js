@@ -1,8 +1,8 @@
 // Fetch the data
-function weatherBalloon(cityID) {
-  var key = "{417cdd67ef0bf08e08a07a43a038ad98}";
+function weatherBalloon() {
+  const key = "417cdd67ef0bf08e08a07a43a038ad98";
   fetch(
-    "https://api.openweathermap.org/data/2.5/weather?id=676309&APPID=417cdd67ef0bf08e08a07a43a038ad98"
+    `https://api.openweathermap.org/data/2.5/weather?id=676309&APPID=${key}`
   )
     .then(function (resp) {
       return resp.json();
@@ -12,13 +12,15 @@ function weatherBalloon(cityID) {
     });
 }
 
-window.onload = function () {
-  weatherBalloon(676309);
-};
+// window.onload = function () {
+//   weatherBalloon();
+// }; This is not necessary, as the JS file is pasted in to the end of the HTML file.
 
 // Insert the data
 function drawWeather(d) {
-  var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+  const celcius = Math.round(parseFloat(d.main.temp) - 273.15);
   document.getElementById("temp").innerHTML = celcius + "&deg;";
   document.getElementById("description").innerHTML = d.weather[0].description;
 }
+
+weatherBalloon();
