@@ -11,4 +11,4 @@ A basic carousel added, using CSS.
 Unfortunately because of some GitHub Pages issue, I cannot sort the project into folders (images, CSS, JS files).
 The project can be found at https://gzbotii.github.io/Hargita-Mountains-Ski-Resort/
 
-JS code refactored based on the feedback.
+JS code refactored based on the feedback. Should I add something else as well?
