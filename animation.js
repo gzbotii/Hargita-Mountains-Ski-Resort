@@ -3,11 +3,12 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".footer-col", {
   scrollTrigger: {
     trigger: ".footer",
+    start: "top 75%",
   },
   duration: 0.6,
   ease: "slow(0.7, 0.7, false)",
   y: 70,
-  delay: 0.3,
+  //   delay: 0.3,
 });
 
 gsap.from("header", {
