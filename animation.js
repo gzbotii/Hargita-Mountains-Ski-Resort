@@ -1,45 +1,6 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function animation() {
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from(".footer-col", {
-    scrollTrigger: {
-      trigger: ".footer",
-      start: "top 75%",
-    },
-    duration: 0.6,
-    ease: "slow(0.7, 0.7, false)",
-    y: 70,
-    //   delay: 0.3,
-  });
-
-  gsap.from("header", {
-    duration: 0.4,
-    ease: "back.out(1.1)",
-    y: -500,
-  });
-
-  gsap.from(".nav-link, .weather-info, weather-icon", {
-    duration: 0.4,
-    ease: "back.outexpo.out",
-    y: -100,
-    delay: 0.4,
-    stagger: 0.1,
-  });
-
-  gsap.from(".logo", {
-    duration: 1,
-    opacity: 0,
-    delay: 1.2,
-  });
-
-  gsap.from("h1, .button", {
-    duration: 1,
-    ease: "Power3.easeIn",
-    x: -730,
-    delay: 1.8,
-    stagger: 0.5,
-  });
-
   gsap.from("h3, .carousel-item p", {
     scrollTrigger: {
       trigger: "h3",
@@ -48,6 +9,7 @@ function animation() {
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
     y: 100,
+    opacity: 0.4,
   });
 
   gsap.from(".arrow-prev", {
@@ -69,6 +31,43 @@ function animation() {
     x: -20,
     delay: 1,
   });
+
+  gsap.from(".footer-col", {
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "top 75%",
+    },
+    duration: 0.7,
+    ease: "slow(0.7, 0.7, false)",
+    y: 110,
+    opacity: 0.4,
+  });
+
+  const timeline = gsap.timeline({ defaults: { duration: 0.4 } });
+
+  timeline
+    .from("header", {
+      ease: "back.out(1.1)",
+      yPercent: -100,
+    })
+
+    .from(".nav-link, .weather-info, weather-icon", {
+      ease: "back.outexpo.out",
+      y: -100,
+      stagger: 0.1,
+    })
+
+    .from(".logo", {
+      duration: 1,
+      opacity: 0,
+    })
+
+    .from(".button, h1", {
+      duration: 1,
+      ease: "Power3.easeIn",
+      xPercent: -250,
+      stagger: 0.5,
+    });
 }
 
 window.onload = animation();
