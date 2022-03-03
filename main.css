@@ -340,6 +340,11 @@ header {
   .weather-info span:last-child {
     padding-left: 2em;
   }
+
+  #map {
+    height: 60vh;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
