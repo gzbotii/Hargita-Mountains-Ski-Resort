@@ -30,6 +30,14 @@ gsap.from(".logo", {
   delay: 1.2,
 });
 
+gsap.from("p.intro-text, .button", {
+  duration: 1,
+  ease: "Power3.easeIn",
+  x: -630,
+  delay: 1.8,
+  stagger: 0.5,
+});
+
 gsap.from("h3, .carousel-item p", {
   scrollTrigger: {
     trigger: "h3",
