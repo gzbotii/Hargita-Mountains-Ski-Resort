@@ -43,7 +43,7 @@ function animation() {
   gsap.from("h3, .carousel-item p", {
     scrollTrigger: {
       trigger: "h3",
-      start: "top 75%",
+      start: "top 85%",
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
