@@ -224,6 +224,11 @@ header {
   font-size: 3rem;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 @media (min-width: 700px) {
   .main-content {
     display: grid;
