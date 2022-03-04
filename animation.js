@@ -62,7 +62,7 @@ function animation() {
       opacity: 0,
     })
 
-    .from(".button, .title h1", {
+    .from(".button, h1.title", {
       duration: 1,
       ease: "Power3.easeIn",
       xPercent: -250,
