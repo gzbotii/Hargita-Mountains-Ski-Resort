@@ -43,8 +43,8 @@
 .service_content a::before {
   content: "";
   position: absolute;
-  width: 140px;
-  height: 10px;
+  /* width: 140px;
+  height: 10px; */
   top: 50%;
   left: -13px;
   border-radius: 50px;
@@ -58,9 +58,11 @@
 }
 
 .service_pattern {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .service_pattern h1 {
   margin-bottom: 30px;
