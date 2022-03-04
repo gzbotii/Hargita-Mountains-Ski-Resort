@@ -30,13 +30,13 @@
       <nav class="nav">
         <ul class="nav-list">
           <li>
-            <a href="index.html" class="nav-link nav-link-ltr">Home page</a>
+            <a href="#home" class="nav-link nav-link-ltr">Home page</a>
           </li>
           <li>
-            <a href="#" class="nav-link nav-link-ltr">Ski runs</a>
+            <a href="#about" class="nav-link nav-link-ltr">Services</a>
           </li>
           <li>
-            <a href="map.html" class="nav-link nav-link-ltr">Resort Map</a>
+            <a href="#map" class="nav-link nav-link-ltr">Resort Map</a>
           </li>
           <li>
             <a href="#" class="nav-link nav-link-ltr">Contact</a>
@@ -44,9 +44,9 @@
         </ul>
       </nav>
       <div class="nav_mobile" id="nav_mobile">
-        <a href="index.html">Home page</a>
-        <a href="#services">Ski runs</a>
-        <a href="map.html">Resort Map</a>
+        <a href="#home">Home page</a>
+        <a href="#about">Services</a>
+        <a href="#map">Resort Map</a>
         <a href="#">Contact</a>
       </div>
       <div class="weather">
@@ -57,18 +57,20 @@
         <p class="weather-info">Recent: <span id="description"></span></p>
       </div>
     </header>
-    <main class="main main-content">
-      <h1 class="title">Get next years pass now to save</h1>
-      <p class="intro-text">
-        Hargita mountains is an extremely popular ski destination with a
-        bustling historic town and laid-back vibe. It's undoubtedly an awesome
-        mountain to ride. Affordable lodging, an abundance of slopes and
-        Transylvania's highest lift. The resort encompasses two peaks, Kossuth
-        Rock and Madarasi Hargita.
-      </p>
-      <a href="#" class="button button--main">Get a season pass</a>
-      <a href="#" class="button button-outline">Get tickets</a>
-    </main>
+    <section id="home">
+      <main class="main main-content">
+        <h1 class="title">Get next years pass now to save</h1>
+        <p class="intro-text">
+          Hargita mountains is an extremely popular ski destination with a
+          bustling historic town and laid-back vibe. It's undoubtedly an awesome
+          mountain to ride. Affordable lodging, an abundance of slopes and
+          Transylvania's highest lift. The resort encompasses two peaks, Kossuth
+          Rock and Madarasi Hargita.
+        </p>
+        <a href="#" class="button button--main">Get a season pass</a>
+        <a href="#" class="button button-outline">Get tickets</a>
+      </main>
+    </section>
     <div class="carousel-wrapper">
       <span id="item-1"></span>
       <span id="item-2"></span>
@@ -100,16 +102,20 @@
         <a class="arrow arrow-next" href="#item-1"></a>
       </div>
     </div>
-    <section id="About">
+    <section id="about">
       <div class="service_pattern pattern_1">
         <div class="service_content">
-          <h1>Transform your brand</h1>
+          <h1>Ski and snowboard rental equipment</h1>
           <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
+            Beginners especially, but skiers of all levels as well, may overlook
+            the importance of renting quality ski and snowboard equipment mainly
+            because they do not realize the vital role the right ski or
+            snowboard equipment plays in achieving progress during their ski or
+            snowboard training programme. Quality ski and snowboard equipment
+            that is properly serviced will actually lead to faster progress
+            during ski and snowboard classes.
           </p>
-          <a href="#" class="link1">Learn more</a>
+          <a href="#" class="button button--services">Get a season pass</a>
         </div>
         <div class="sevice_image">
           <img
@@ -130,13 +136,15 @@
           />
         </div>
         <div class="service_content">
-          <h1>Stand out to the right audience</h1>
+          <h1>The Hilltop Cabins</h1>
           <p>
-            Using a collaborative formula of designers, researchers,
-            photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.
+            Currently in the making, our mountain ski cabins are all about
+            taking life easy. The facilities are stone’s throw away and the
+            community close. Laugh with new friends and family, lounging up, up,
+            up in the sky and enjoying the views - we’re on one of the most
+            elevated spots on the county.
           </p>
-          <a href="#" class="link2">Learn more</a>
+          <a href="#" class="button button-services-second">Get tickets</a>
         </div>
       </div>
     </section>
@@ -191,8 +199,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="mobile-nav.js"></script>
-    <!-- <script src="weather-app.js"></script> -->
+    <script src="weather-app.js"></script>
     <script src="animation.js"></script>
-    <!-- <script src="map.js"></script> -->
+    <script src="map.js"></script>
   </body>
 </html>

@@ -37,10 +37,32 @@ function animation() {
       trigger: ".footer",
       start: "top 75%",
     },
+    duration: 0.9,
+    ease: "slow(0.7, 0.7, false)",
+    y: 120,
+    opacity: 0.4,
+  });
+
+  gsap.from(".pattern_2_image", {
+    scrollTrigger: {
+      trigger: ".pattern_2",
+      start: "top 70%",
+    },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
-    y: 110,
-    opacity: 0.4,
+    y: 150,
+    opacity: 0.3,
+  });
+
+  gsap.from(".pattern_1_image", {
+    scrollTrigger: {
+      trigger: ".pattern_1",
+      start: "top 70%",
+    },
+    duration: 0.7,
+    ease: "slow(0.7, 0.7, false)",
+    y: 150,
+    opacity: 0.3,
   });
 
   const timeline = gsap.timeline({ defaults: { duration: 0.4 } });
@@ -62,10 +84,10 @@ function animation() {
       opacity: 0,
     })
 
-    .from(".button, h1.title", {
+    .from(".button--main, .button-outline, h1.title", {
       duration: 1,
       ease: "Power3.easeIn",
-      xPercent: -250,
+      xPercent: -300,
       stagger: 0.5,
     });
 }

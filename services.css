@@ -20,9 +20,30 @@
   font-family: "Work Sans", sans-serif;
   font-size: 1.125rem;
   color: var(--clr-dark);
-  line-height: 1.6;
+  /* line-height: 1.6; */
   padding: 70px 30px;
   /* padding-top: 10%; */
+}
+
+.button--services {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+}
+
+.button--services:hover {
+  background-color: var(--clr-dark);
+}
+
+.button-services-second {
+  box-sizing: border-box;
+  outline: 3px solid var(--clr-primary);
+  outline-offset: -3px;
+  color: var(--clr-primary);
+}
+
+.button-services-second:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
 }
 
 .service_content h1 {
@@ -99,7 +120,13 @@
 
 @media (min-width: 1080px) {
   .service_content {
-    padding: 0 30px;
-    padding-top: 40%;
+    padding: 0 70px;
+    padding-top: 30%;
+  }
+  .service_pattern h1 {
+    font-size: 3rem;
+  }
+  .service_pattern p {
+    font-size: 1rem;
   }
 }

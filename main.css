@@ -29,6 +29,10 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3 {
@@ -49,9 +53,9 @@ h3 {
 }
 
 .button {
-  padding: 0.25em 0.5em;
+  padding: 0.35em 0.6em;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -232,6 +236,7 @@ header {
 .map-title {
   margin: 2em 1em 1em 0;
   padding-left: 11%;
+  font-size: 2rem;
 }
 
 @media (min-width: 700px) {
