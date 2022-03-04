@@ -345,6 +345,14 @@ header {
     height: 60vh;
     width: 100%;
   }
+
+  .map-title {
+    /* padding: 160px; */
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: var(--grid);
+    align-items: center;
+  }
 }
 
 @media (min-width: 1200px) {

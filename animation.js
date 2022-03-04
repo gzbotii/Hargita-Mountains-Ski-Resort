@@ -58,11 +58,11 @@ function animation() {
     })
 
     .from(".logo", {
-      duration: 1,
+      duration: 0.5,
       opacity: 0,
     })
 
-    .from(".button, h1", {
+    .from(".button, .title h1", {
       duration: 1,
       ease: "Power3.easeIn",
       xPercent: -250,
