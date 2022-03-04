@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #f70058;
+  --clr-dark: #0c0e36;
+  --clr-light: #fff;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+.service_content {
+  text-align: center;
+  padding: 70px 30px;
+  /* margin: 0 !important; */
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+  line-height: 1.6;
+}
+
+.service_content h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* .service_content p {
+} */
+
+.service_content a {
+  text-transform: uppercase;
+  color: #23303e;
+  margin-top: 40px;
+  position: relative;
+}
+
+.service_content a::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 10px;
+  top: 50%;
+  left: -13px;
+  border-radius: 50px;
+  opacity: 0.5;
+  transition: opacity 200ms ease-in-out;
+  z-index: -1;
+}
+
+.service_content a:hover::before {
+  opacity: 1;
+}
+
+.service_pattern {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.service_pattern h1 {
+  margin-bottom: 30px;
+}
+
+.pattern_1_image {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: -10px;
+}
+.pattern_1 .sevice_image {
+  order: 2;
+}
+.pattern_1 .service_content {
+  order: 1;
+}
+
+.pattern_2_image {
+  height: 100%;
+  width: 100%;
+}
+
+.pattern_1 .sevice_image {
+  order: 2;
+}
