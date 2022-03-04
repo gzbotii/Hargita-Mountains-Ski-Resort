@@ -35,9 +35,9 @@ function animation() {
   gsap.from(".footer-col", {
     scrollTrigger: {
       trigger: ".footer",
-      start: "top 75%",
+      start: "top 80%",
     },
-    duration: 0.9,
+    duration: 1,
     ease: "slow(0.7, 0.7, false)",
     y: 120,
     opacity: 0.4,
@@ -46,7 +46,7 @@ function animation() {
   gsap.from(".pattern_2_image", {
     scrollTrigger: {
       trigger: ".pattern_2",
-      start: "top 70%",
+      start: "top 75%",
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
@@ -57,7 +57,7 @@ function animation() {
   gsap.from(".pattern_1_image", {
     scrollTrigger: {
       trigger: ".pattern_1",
-      start: "top 70%",
+      start: "top 75%",
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
@@ -79,10 +79,10 @@ function animation() {
       stagger: 0.1,
     })
 
-    .from(".logo", {
-      duration: 0.5,
-      opacity: 0,
-    })
+    // .from(".logo", {
+    //   duration: 0.5,
+    //   opacity: 0,
+    // })
 
     .from(".button--main, .button-outline, h1.title", {
       duration: 1,
