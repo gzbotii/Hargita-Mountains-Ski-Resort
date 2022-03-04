@@ -236,7 +236,7 @@ header {
 .map-title {
   margin: 2em 1em 1em 0;
   padding-left: 11%;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 @media (min-width: 700px) {
