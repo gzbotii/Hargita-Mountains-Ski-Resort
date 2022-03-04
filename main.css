@@ -229,6 +229,11 @@ header {
   width: 100%;
 }
 
+.map-title {
+  margin: 2em 1em 1em 0;
+  padding-left: 11%;
+}
+
 @media (min-width: 700px) {
   .main-content {
     display: grid;
@@ -340,23 +345,15 @@ header {
   .weather-info span:last-child {
     padding-left: 2em;
   }
-
-  #map {
-    height: 60vh;
-    width: 100%;
-  }
-
-  .map-title {
-    /* padding: 160px; */
-    /* text-align: center; */
-    display: grid;
-    grid-template-columns: var(--grid);
-    align-items: center;
-  }
 }
 
 @media (min-width: 1200px) {
   .main-content {
     background-position: center right;
+  }
+
+  #map {
+    height: 60vh;
+    width: 100%;
   }
 }
