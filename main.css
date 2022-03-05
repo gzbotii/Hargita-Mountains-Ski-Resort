@@ -267,6 +267,10 @@ header {
   .main {
     background-position: left bottom;
   }
+  ._arrow {
+    padding-left: 25%;
+    grid-column: 3 / 4;
+  }
 }
 
 @media (min-width: 1080px) {
@@ -292,6 +296,14 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  ._arrow {
+    /* justify-content: center; */
+
+    padding-left: 160%;
+    grid-column: 3 / 4;
+    /* align-content: center; */
   }
 
   ._arrow img {
