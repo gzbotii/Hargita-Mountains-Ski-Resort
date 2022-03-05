@@ -72,7 +72,7 @@
 
 .service_content a {
   text-transform: uppercase;
-  color: #23303e;
+  color: var(--clr-dark);
   margin-top: 40px;
   position: relative;
   font-size: 0.9rem;
@@ -118,8 +118,8 @@
   }
 
   .service_content {
-    padding: 0 30px;
-    padding-top: 15%;
+    padding: 0px 30px;
+    padding-top: 5%;
   }
   .service_content h1 {
     font-size: 1.6rem;
@@ -127,6 +127,14 @@
 
   .service_content p {
     font-size: 1rem;
+  }
+  .serv_button {
+    padding: 0.6em 0.8em;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .button--services {
+    margin-top: 10px !important;
   }
 }
 
