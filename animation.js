@@ -14,7 +14,7 @@ function animation() {
 
   gsap.from(".arrow-prev", {
     scrollTrigger: {
-      trigger: "p.arrow",
+      trigger: ".arrow",
     },
     duration: 0.7,
     ease: "elastic.out(1.5, 0.3)",
@@ -24,7 +24,7 @@ function animation() {
 
   gsap.from(".arrow-next", {
     scrollTrigger: {
-      trigger: "arrow",
+      trigger: ".arrow",
     },
     duration: 0.7,
     ease: "elastic.out(1.5, 0.3)",
