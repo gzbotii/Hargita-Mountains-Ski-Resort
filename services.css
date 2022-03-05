@@ -25,6 +25,17 @@
   /* padding-top: 10%; */
 }
 
+.serv_button {
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+  font-size: 1rem !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.75em;
+}
+
 .button--services {
   background-color: var(--clr-primary);
   color: var(--clr-light);
@@ -32,6 +43,7 @@
 
 .button--services:hover {
   background-color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 .button-services-second {
@@ -47,7 +59,7 @@
 }
 
 .service_content h1 {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   margin-bottom: 40px;
   font-weight: var(--fw-bold);
 }
@@ -60,7 +72,7 @@
 
 .service_content a {
   text-transform: uppercase;
-  color: #23303e;
+  color: var(--clr-dark);
   margin-top: 40px;
   position: relative;
   font-size: 0.9rem;
@@ -106,22 +118,30 @@
   }
 
   .service_content {
-    padding: 0 30px;
-    padding-top: 15%;
+    padding: 0px 30px;
+    padding-top: 5%;
   }
   .service_content h1 {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
 
   .service_content p {
     font-size: 1rem;
+  }
+  .serv_button {
+    padding: 0.6em 0.8em;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .button--services {
+    margin-top: 10px !important;
   }
 }
 
 @media (min-width: 1080px) {
   .service_content {
     padding: 0 70px;
-    padding-top: 30%;
+    padding-top: 25%;
   }
   .service_pattern h1 {
     font-size: 3rem;
