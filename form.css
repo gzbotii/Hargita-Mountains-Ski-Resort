@@ -22,7 +22,6 @@
   padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /* border-radius: 15px; */
 }
 
 .screen-body {
@@ -63,6 +62,10 @@
   color: var(--clr-dark);
 }
 
+.phone {
+  padding-bottom: 0.5em;
+}
+
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -83,7 +86,7 @@
   background: none;
   border: none;
   border-bottom: 2px solid var(--clr-dark);
-  color: #ddd;
+  color: var(--clr-dark);
   font-size: 0.9rem;
   /* text-transform: uppercase; */
   outline: none;
@@ -118,15 +121,17 @@
   border-color: #09c372;
 }
 
-.input-control.error input {
-  border-color: orange;
+.app-contact a {
+  color: var(--clr-dark);
+}
+
+.app-contact a:hover {
+  color: var(--clr-primary);
 }
 
 .error {
-  /* position: absolute; */
-  color: orange;
-  font-size: 0.7rem;
-  /* height: 13px; */
+  color: var(--clr-primary);
+  font-size: 0.8rem;
 }
 
 @media (min-width: 700px) {
@@ -134,9 +139,9 @@
     flex-direction: column;
   }
 
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
+  /* .screen-body-item.left {
+    margin-bottom: 2em;
+  } */
 
   .app-title {
     flex-direction: row;

@@ -65,6 +65,28 @@ function animation() {
     opacity: 0.3,
   });
 
+  gsap.from(".app-title", {
+    scrollTrigger: {
+      trigger: ".screen",
+      start: "top 85%",
+    },
+    duration: 0.5,
+    ease: "slow(0.7, 0.7, false)",
+    x: -150,
+    opacity: 0.3,
+  });
+
+  gsap.from(".app-contact", {
+    scrollTrigger: {
+      trigger: ".screen",
+      start: "top 85%",
+    },
+    duration: 0.5,
+    ease: "slow(0.7, 0.7, false)",
+    y: 150,
+    opacity: 0.3,
+  });
+
   const timeline = gsap.timeline({ defaults: { duration: 0.4 } });
 
   timeline
