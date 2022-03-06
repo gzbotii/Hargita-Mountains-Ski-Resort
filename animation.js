@@ -56,7 +56,7 @@ function animation() {
 
   gsap.from(".pattern_1 h1", {
     scrollTrigger: {
-      trigger: ".pattern_1_image",
+      trigger: ".service_content",
       start: "top 75%",
     },
     duration: 0.7,
