@@ -164,6 +164,7 @@
       <div id="map"></div>
     </section>
     <section id="contact">
+      <form id="form">
       <div class="screen">
         <div class="screen-body">
           <div class="screen-body-item left">
@@ -178,21 +179,28 @@
           <div class="screen-body-item">
             <div class="app-form">
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="Name" />
+                
+                <input id="username" class="app-form-control" placeholder="Name"/>
+                <div class="error"></div>
               </div>
               <div class="app-form-group">
-                <input class="app-form-control" placeholder="Email" />
+                
+                <input id="email" class="app-form-control" placeholder="Email"/>
+                <div class="error"></div>
               </div>
               <div class="app-form-group message">
-                <input class="app-form-control" placeholder="Message" />
+                <input id="message" class="app-form-control" placeholder="Message"/>
+                <div class="error"></div>
               </div>
               <div class="app-form-group buttons">
-                <button class="button button-contact">SEND</button>
+                <button type="submit" class="button button-contact">SEND</button>
+                <div id="error"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </form>
     </section>
     <footer class="footer">
       <div class="container">
@@ -244,5 +252,6 @@
     <!-- <script src="weather-app.js"></script> -->
     <script src="animation.js"></script>
     <script src="map.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
