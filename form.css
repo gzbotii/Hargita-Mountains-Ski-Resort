@@ -107,8 +107,16 @@
   outline: none;
 } */
 
-.app-form-button:hover {
+.button-contact {
+  box-sizing: border-box;
+  outline: 3px solid var(--clr-primary);
+  outline-offset: -3px;
   color: var(--clr-primary);
+}
+
+.button-contact:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
 }
 
 @media (min-width: 700px) {
