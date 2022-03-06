@@ -46,7 +46,7 @@
   flex-direction: column;
   position: relative;
   color: var(--clr-primary);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: var(--fw-bold);
 }
 
@@ -55,6 +55,12 @@
   font-size: 1.2rem;
   color: var(--clr-dark);
   padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.app-contact a {
+  text-decoration: none;
+  color: var(--clr-dark);
 }
 
 .app-form-group {

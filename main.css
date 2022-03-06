@@ -238,7 +238,7 @@ header {
 .title {
   line-height: 1;
   font-weight: var(--fw-black);
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 #map {
@@ -266,6 +266,10 @@ header {
 
   .main {
     background-position: left bottom;
+  }
+
+  .title {
+    font-size: 3rem;
   }
   ._arrow {
     padding-left: 25%;
