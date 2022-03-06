@@ -35,11 +35,11 @@ function animation() {
   gsap.from(".footer-col", {
     scrollTrigger: {
       trigger: ".footer",
-      start: "top 80%",
+      start: "top 90%",
     },
-    duration: 1,
+    duration: 1.3,
     ease: "slow(0.7, 0.7, false)",
-    y: 120,
+    y: 90,
     opacity: 0.4,
   });
 
@@ -56,7 +56,7 @@ function animation() {
 
   gsap.from(".pattern_1 h1", {
     scrollTrigger: {
-      trigger: ".service_content",
+      trigger: ".pattern_1_image",
       start: "top 75%",
     },
     duration: 0.7,
