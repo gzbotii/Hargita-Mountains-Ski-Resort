@@ -22,7 +22,6 @@
   padding-right: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
-  /* border-radius: 15px; */
 }
 
 .screen-body {
@@ -63,6 +62,10 @@
   color: var(--clr-dark);
 }
 
+.phone {
+  padding-bottom: 0.5em;
+}
+
 .app-form-group {
   margin-bottom: 15px;
 }
@@ -83,7 +86,7 @@
   background: none;
   border: none;
   border-bottom: 2px solid var(--clr-dark);
-  color: #ddd;
+  color: var(--clr-dark);
   font-size: 0.9rem;
   /* text-transform: uppercase; */
   outline: none;
@@ -91,21 +94,12 @@
 }
 
 .app-form-control::placeholder {
-  color: rgba(146, 146, 146, 0.4);
+  color: rgba(146, 146, 146, 0.6);
 }
 
 .app-form-control:focus {
   border-bottom-color: var(--clr-primary);
 }
-
-/* .app-form-button {
-  background: none;
-  border: none;
-  color: #ea1d6f;
-  font-size: 14px;
-  cursor: pointer;
-  outline: none;
-} */
 
 .button-contact {
   box-sizing: border-box;
@@ -119,14 +113,35 @@
   color: var(--clr-light);
 }
 
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.app-contact a {
+  color: var(--clr-dark);
+}
+
+.app-contact a:hover {
+  color: var(--clr-primary);
+}
+
+.error {
+  color: var(--clr-primary);
+  font-size: 0.8rem;
+}
+
 @media (min-width: 700px) {
   .screen-body {
     flex-direction: column;
   }
 
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
+  /* .screen-body-item.left {
+    margin-bottom: 2em;
+  } */
 
   .app-title {
     flex-direction: row;
@@ -146,7 +161,7 @@
 
 @media (min-width: 1080px) {
   .screen-body {
-    padding: 40px;
+    /* padding: 40px; */
     flex-direction: row;
     min-height: 20em;
   }

@@ -43,9 +43,9 @@ function animation() {
     opacity: 0.4,
   });
 
-  gsap.from(".pattern_2_image", {
+  gsap.from(".pattern_2 h1", {
     scrollTrigger: {
-      trigger: ".pattern_2",
+      trigger: ".pattern_2_image",
       start: "top 75%",
     },
     duration: 0.7,
@@ -54,9 +54,9 @@ function animation() {
     opacity: 0.3,
   });
 
-  gsap.from(".pattern_1_image", {
+  gsap.from(".pattern_1 h1", {
     scrollTrigger: {
-      trigger: ".pattern_1",
+      trigger: ".pattern_1_image",
       start: "top 75%",
     },
     duration: 0.7,
@@ -64,6 +64,29 @@ function animation() {
     y: 150,
     opacity: 0.3,
   });
+
+  gsap.from(".app-title, .app-contact", {
+    scrollTrigger: {
+      trigger: ".screen",
+      start: "top 85%",
+    },
+    duration: 1.5,
+    // ease: "slow(0.7, 0.7, false)",
+    // x: -150,
+    opacity: 0.2,
+    stagger: 0.1,
+  });
+
+  // gsap.from(".app-contact", {
+  //   scrollTrigger: {
+  //     trigger: ".screen",
+  //     start: "top 85%",
+  //   },
+  //   duration: 0.5,
+  //   ease: "slow(0.7, 0.7, false)",
+  //   y: 150,
+  //   opacity: 0.3,
+  // });
 
   const timeline = gsap.timeline({ defaults: { duration: 0.4 } });
 
