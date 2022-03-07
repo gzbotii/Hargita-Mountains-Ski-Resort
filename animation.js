@@ -8,7 +8,7 @@ function animation() {
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
-    y: 100,
+    y: 130,
     opacity: 0.4,
   });
 
@@ -65,17 +65,7 @@ function animation() {
     opacity: 0.3,
   });
 
-  // gsap.from(".app-title, .app-contact", {
-  //   scrollTrigger: {
-  //     trigger: ".screen",
-  //     start: "top 85%",
-  //   },
-  //   duration: 1.5,
-  //   opacity: 0.2,
-  //   stagger: 0.1,
-  // });
-
-  gsap.from(".app-contact", {
+  gsap.from(".app-contact, .app-title", {
     scrollTrigger: {
       trigger: ".screen",
       start: "top 85%",
@@ -84,6 +74,16 @@ function animation() {
     ease: "slow(0.7, 0.7, false)",
     y: 150,
     opacity: 0.3,
+    stagger: 0.1,
+  });
+
+  gsap.from(".screen-body-item", {
+    scrollTrigger: {
+      trigger: ".screen",
+      start: "top 85%",
+    },
+    duration: 0.7,
+    opacity: 0.2,
   });
 
   const timeline = gsap.timeline({ defaults: { duration: 0.4 } });
