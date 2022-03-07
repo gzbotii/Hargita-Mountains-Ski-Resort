@@ -71,8 +71,6 @@ function animation() {
       start: "top 85%",
     },
     duration: 1.5,
-    // ease: "slow(0.7, 0.7, false)",
-    // x: -150,
     opacity: 0.2,
     stagger: 0.1,
   });
