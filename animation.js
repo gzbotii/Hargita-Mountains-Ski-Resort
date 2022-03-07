@@ -8,7 +8,7 @@ function animation() {
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
-    y: 130,
+    y: 140,
     opacity: 0.4,
   });
 
@@ -17,8 +17,8 @@ function animation() {
       trigger: ".arrow",
     },
     duration: 0.7,
-    ease: "elastic.out(1.5, 0.3)",
-    x: 20,
+    ease: "elastic.out(2, 0.3)",
+    x: 30,
     delay: 1,
   });
 
@@ -27,8 +27,8 @@ function animation() {
       trigger: ".arrow",
     },
     duration: 0.7,
-    ease: "elastic.out(1.5, 0.3)",
-    x: -20,
+    ease: "elastic.out(2, 0.3)",
+    x: -30,
     delay: 1,
   });
 
@@ -46,7 +46,7 @@ function animation() {
   gsap.from(".pattern_2 h1", {
     scrollTrigger: {
       trigger: ".pattern_2_image",
-      start: "top 75%",
+      start: "top 65%",
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
@@ -57,7 +57,7 @@ function animation() {
   gsap.from(".pattern_1 h1", {
     scrollTrigger: {
       trigger: ".service_content",
-      start: "top 75%",
+      start: "top 65%",
     },
     duration: 0.7,
     ease: "slow(0.7, 0.7, false)",
