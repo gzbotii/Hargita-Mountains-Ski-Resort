@@ -88,9 +88,8 @@
   border-bottom: 2px solid var(--clr-dark);
   color: var(--clr-dark);
   font-size: 0.9rem;
-  /* text-transform: uppercase; */
   outline: none;
-  /* transition: border-color 0.2s; */
+  transition: border-color 0.2s;
 }
 
 .app-form-control::placeholder {
@@ -139,12 +138,9 @@
     flex-direction: column;
   }
 
-  /* .screen-body-item.left {
-    margin-bottom: 2em;
-  } */
-
   .app-title {
     flex-direction: row;
+    margin-bottom: 0.9em;
   }
 
   .app-title span {
@@ -161,14 +157,15 @@
 
 @media (min-width: 1080px) {
   .screen-body {
-    /* padding: 40px; */
     flex-direction: row;
-    min-height: 20em;
+    min-height: 17em;
   }
 
   .app-title {
     display: flex;
     flex-direction: row;
+    font-size: 3rem;
+    margin-bottom: 0.2em;
   }
 
   .screen-body-item {
