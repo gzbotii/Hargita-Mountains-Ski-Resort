@@ -4,11 +4,13 @@ Built-up with the mobile-first principle in mind. The design followed initially,
 
 The weather data is fetched with an API call from OpenWeatherMap, location is set to Hargita mountains.
 
-The footer is responsive as well, adapted to mobile, tablet, desktop. Basic on-hover animaiton added to the footer list-elements. Social media logos are changing color on-hover.
+The footer is responsive as well, adapted to mobile, tablet, desktop. It feautures an on-hover animaiton on the footer list-elements. Social media logos are changing color on-hover.
 
 A basic carousel added, using CSS.
 
 GSAP is used for animation - the header has a timeline, other elments use the scroll trigger.
+
+It features a Google Maps embed module, location set to the Hargita mountain, where this fictional resort is placed. 
 
 Unfortunately because of some GitHub Pages issue, I cannot sort the project into folders (images, CSS, JS files).
 The project can be found at https://gzbotii.github.io/Hargita-Mountains-Ski-Resort/
