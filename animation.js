@@ -48,10 +48,10 @@ function animation() {
       trigger: ".pattern_2_image",
       start: "top 65%",
     },
-    duration: 0.7,
+    duration: 0.8,
     ease: "slow(0.7, 0.7, false)",
-    y: 150,
-    opacity: 0.3,
+    y: 110,
+    opacity: 0.1,
   });
 
   gsap.from(".pattern_1 h1", {
@@ -59,10 +59,10 @@ function animation() {
       trigger: ".service_content",
       start: "top 65%",
     },
-    duration: 0.7,
+    duration: 0.8,
     ease: "slow(0.7, 0.7, false)",
-    y: 150,
-    opacity: 0.3,
+    y: 110,
+    opacity: 0.1,
   });
 
   gsap.from(".app-contact, .app-title", {

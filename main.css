@@ -17,10 +17,6 @@
     minmax(1em, 3fr) max-content;
 }
 
-nav {
-  display: none;
-}
-
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
@@ -31,6 +27,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 50px);
+}
+
+nav {
+  display: none;
 }
 
 h1,
