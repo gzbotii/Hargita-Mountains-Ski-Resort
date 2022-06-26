@@ -4,8 +4,9 @@ function hamburgr() {
   navMobile.classList.toggle("nav_mobile_open");
 }
 
-const navMobile = document.getElementById("nav_mobile");
+const navigationHeight = document.querySelector("nav").offsetHeight;
 
-function hamburgr() {
-  navMobile.classList.toggle("nav_mobile_open");
-}
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navigationHeight + "px"
+);
