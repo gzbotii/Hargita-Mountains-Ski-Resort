@@ -101,15 +101,21 @@
 }
 
 .button-contact {
-  box-sizing: border-box;
-  outline: 3px solid var(--clr-primary);
-  outline-offset: -3px;
-  color: var(--clr-primary);
+  padding: 0.3em 0.4em !important;
+  background-color: var(--clr-light);
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.75em;
 }
 
 .button-contact:hover {
   background-color: var(--clr-primary);
   color: var(--clr-light);
+  /* border: var(--clr-primary); */
 }
 
 .input-control input:focus {
