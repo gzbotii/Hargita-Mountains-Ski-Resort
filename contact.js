@@ -10,7 +10,6 @@ form.addEventListener("submit", (e) => {
   clearForm.forEach((input) => {
     input.value = "";
   });
-  // username.value = "";
 });
 
 const setError = (element, message) => {
