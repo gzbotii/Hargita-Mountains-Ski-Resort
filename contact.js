@@ -1,11 +1,16 @@
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const clearForm = document.querySelectorAll("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   validateInputs();
+  clearForm.forEach((input) => {
+    input.value = "";
+  });
+  // username.value = "";
 });
 
 const setError = (element, message) => {
