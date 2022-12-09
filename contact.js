@@ -6,10 +6,19 @@ const clearForm = document.querySelectorAll("input");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  validateInputs();
-  clearForm.forEach((input) => {
-    input.value = "";
-  });
+  const isValid = validateInputs();
+  if (isValid) {
+    // display success message
+    const successMessage = document.createElement("p");
+    successMessage.innerText = "Form successfully submitted!";
+    successMessage.classList.add("success-message");
+    form.appendChild(successMessage);
+
+    // clear form inputs
+    clearForm.forEach((input) => {
+      input.value = "";
+    });
+  }
 });
 
 const setError = (element, message) => {
@@ -42,17 +51,20 @@ const validateInputs = () => {
 
   if (usernameValue === "") {
     setError(username, "Name is required");
+    return false;
   } else {
     setSuccess(username);
   }
 
   if (emailValue === "") {
     setError(email, "Email is required");
+    return false;
   } else if (!isValidEmail(emailValue)) {
     setError(email, "Provide a valid email address");
+    return false;
   } else {
     setSuccess(email);
   }
-};
 
-// console.log("hi");
+  return true;
+};
