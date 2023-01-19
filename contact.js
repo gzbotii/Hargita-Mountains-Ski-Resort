@@ -12,7 +12,8 @@ form.addEventListener("submit", (e) => {
   const isValid = validateInputs();
   if (isValid) {
     // display success message in modal
-    successMessageModal.innerText = "Form successfully submitted!";
+    successMessageModal.innerText =
+      "Form successfully submitted. We will contact you shortly.";
     successModal.classList.add("show");
     // clear form inputs
     clearForm.forEach((input) => {

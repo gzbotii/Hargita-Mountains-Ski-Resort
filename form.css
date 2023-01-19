@@ -188,7 +188,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -196,31 +196,20 @@
 .modal-content {
   background-color: var(--clr-light);
   margin: 100% auto;
-  padding: 20px;
+  padding: 1.2em;
   border: 1px solid var(--clr-dark);
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
-/* The Close Button */
 .close {
   color: var(--clr-dark);
-  /* float: right; */
   font-size: 2.2rem;
   font-weight: bold;
-  /* margin-left: 1em; */
 }
-
-/* .close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-} */
 
 .success-message {
   color: var(--clr-primary);
@@ -233,50 +222,35 @@
   display: block;
 }
 
-@media (min-width: 1080px) {
-  .modal {
-    display: none; /* hidden by default */
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  /* Modal Content/Box */
+@media (min-width: 700px) {
   .modal-content {
-    background-color: var(--clr-light);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid var(--clr-dark);
+    margin: 60% auto;
+    border: 2px solid var(--clr-dark);
+    width: 60%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .modal-content {
+    margin: 20% auto;
     width: 40%;
   }
 
-  /* The Close Button */
   .close {
-    color: var(--clr-dark);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 2.6;
   }
 
   .close:hover,
   .close:focus {
-    color: black;
+    color: var(--clr-primary);
     text-decoration: none;
     cursor: pointer;
   }
 
   .success-message {
-    color: var(--clr-primary);
     font-size: 1.125rem;
-    text-align: center;
   }
 
-  /* Show the Modal */
   .show {
     display: block;
   }
