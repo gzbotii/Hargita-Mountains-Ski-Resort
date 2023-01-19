@@ -8,8 +8,9 @@ function hamburgr() {
 navMobile.addEventListener("click", hamburgr);
 
 if (window.innerWidth < 1080) {
-  const topElementsHeight = document.querySelector("top-elements").offsetHeight;
-  const weatherHeight = document.querySelector("weather").offsetHeight;
+  const topElementsHeight =
+    document.querySelector(".top-elements").offsetHeight;
+  const weatherHeight = document.querySelector(".weather").offsetHeight;
   const totalHeight = topElementsHeight + weatherHeight;
   document.documentElement.style.setProperty(
     "--scroll-padding",
