@@ -2,18 +2,18 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 const clearForm = document.querySelectorAll("input");
+const successModal = document.getElementById("successModal");
+const successMessageModal = successModal.querySelector(".success-message");
+const closeButton = successModal.querySelector(".close");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const isValid = validateInputs();
   if (isValid) {
-    // display success message
-    const successMessage = document.createElement("p");
-    successMessage.innerText = "Form successfully submitted!";
-    successMessage.classList.add("success-message");
-    form.appendChild(successMessage);
-
+    // display success message in modal
+    successMessageModal.innerText = "Form successfully submitted!";
+    successModal.classList.add("show");
     // clear form inputs
     clearForm.forEach((input) => {
       input.value = "";
@@ -68,3 +68,13 @@ const validateInputs = () => {
 
   return true;
 };
+
+// close modal when user clicks the "x" button
+closeButton.addEventListener("click", () => {
+  successModal.classList.remove("show");
+});
+
+// close modal when user clicks outside of it
+successModal.addEventListener("click", (e) => {
+  if (e.target === successModal) successModal.classList.remove("show");
+});
