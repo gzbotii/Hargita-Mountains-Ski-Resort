@@ -180,6 +180,10 @@
 }
 
 /* Modal */
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   display: none; /* hidden by default */
   position: fixed;
@@ -232,7 +236,7 @@
 
 @media (min-width: 1080px) {
   .modal-content {
-    margin: 20% auto;
+    margin: 30% auto;
     width: 40%;
   }
 
