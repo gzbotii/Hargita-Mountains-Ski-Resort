@@ -100,11 +100,6 @@ function animation() {
       stagger: 0.1,
     })
 
-    // .from(".logo", {
-    //   duration: 0.5,
-    //   opacity: 0,
-    // })
-
     .from(".button--main, .button-outline, h1.title", {
       duration: 1,
       ease: "Power3.easeIn",

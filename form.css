@@ -116,6 +116,7 @@
   background-color: var(--clr-primary);
   color: var(--clr-light);
   /* border: var(--clr-primary); */
+  margin-bottom: 0.75em;
 }
 
 .input-control input:focus {
