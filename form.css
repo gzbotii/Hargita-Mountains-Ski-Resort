@@ -74,6 +74,10 @@
   margin-top: 30px;
 }
 
+#message {
+  font-family: "Work Sans", sans-serif;
+}
+
 .app-form-group.buttons {
   /* margin-bottom: 20px; */
   padding-top: 20px;
@@ -93,7 +97,8 @@
 }
 
 .app-form-control::placeholder {
-  color: rgba(146, 146, 146, 0.6);
+  color: rgba(188, 188, 188, 0.8);
+  font-family: "Work Sans", sans-serif;
 }
 
 .app-form-control:focus {
@@ -105,6 +110,7 @@
   background-color: var(--clr-light);
   cursor: pointer;
   font-size: 1.1rem;
+  color: var(--clr-dark);
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
