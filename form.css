@@ -208,7 +208,7 @@ body.modal-open {
 /* Content/Box */
 .modal-content {
   background-color: var(--clr-light);
-  margin: 100% auto;
+  margin: 60% auto;
   padding: 1.2em;
   border: 1px solid var(--clr-dark);
   width: 80%;
