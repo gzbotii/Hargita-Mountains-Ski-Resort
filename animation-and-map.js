@@ -122,8 +122,6 @@ function initMap() {
   });
 }
 
-window.onload = function() {
-  animation();
-  initMap();
+window.onload = () => {
+  animation(), initMap();
 };
-
