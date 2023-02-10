@@ -94,6 +94,7 @@
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.2s;
+  border-radius: 0;
 }
 
 .app-form-control::placeholder {
