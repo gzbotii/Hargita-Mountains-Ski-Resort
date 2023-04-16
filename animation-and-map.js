@@ -105,7 +105,17 @@ function animation() {
       ease: "Power3.easeIn",
       xPercent: -300,
       stagger: 0.5,
+      onStart: function() {
+        document.querySelector("h1.title").style.visibility = "visible";
+      }
+    })
+    .to("h1.title", {
+      duration: 0.5,
+      opacity: 1,
     });
+    
+    
+    
 }
 
 // window.onload = animation();
